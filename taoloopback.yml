@@ -1,8 +1,8 @@
 ---
 - name: tao_loopback
   hosts: all
-  tasks:
-    -name: Set Lo0 IPv4 address.
+  task:
+    -name: Set Lo0 IPv4 address
       ios_l3_interface:
-        name: Lo0
+        name: loopback 0
         ipv4: 7.7.7.7/32
